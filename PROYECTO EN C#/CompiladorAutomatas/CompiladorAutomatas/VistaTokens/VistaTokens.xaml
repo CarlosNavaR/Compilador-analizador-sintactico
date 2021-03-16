@@ -1,0 +1,43 @@
+﻿<Window x:Class="CompiladorAutomatas.VistaTokens.VistaTokens"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        Background="White"
+        TextElement.FontWeight="Medium"
+        TextElement.FontSize="14"
+        FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+
+        
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CompiladorAutomatas.VistaTokens"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen"
+        Icon="html.ico"
+        Title="VistaTokens" Height="450" Width="879.5"  Loaded="Window_Loaded">
+    <Grid>
+        <DockPanel Height="50" LastChildFill="False" VerticalAlignment="Top" Background="#FF4B0303" Margin="0,-1,0,0">
+            <Button MouseEnter="OnFocusR" MouseLeave="LeaveFocus" Height="50" VerticalAlignment="Top" Width="76" DockPanel.Dock="Left" Padding="0" Background="{x:Null}" materialDesign:ShadowAssist.ShadowDepth="Depth3" BorderBrush="{x:Null}" Click="Back_Click">
+                <materialDesign:PackIcon Kind="ArrowBackCircle"/>
+            </Button>
+        </DockPanel>
+
+
+
+
+        <ListView x:Name="TokensShow" HorizontalAlignment="Left" Height="339" Margin="19,62,0,0" VerticalAlignment="Top" Width="841">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Indice" DisplayMemberBinding="{Binding ID_Token1}" Width="100"/>
+                    <GridViewColumn Header="Token" DisplayMemberBinding="{Binding Token1}"  Width="150"/>
+                    <GridViewColumn Header="Lexema" DisplayMemberBinding="{Binding Tipo1}" Width="200"/>
+                    <GridViewColumn Header="Descripcion" DisplayMemberBinding="{Binding Descripcion_Tipo1}" Width="340"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+    </Grid>
+</Window>

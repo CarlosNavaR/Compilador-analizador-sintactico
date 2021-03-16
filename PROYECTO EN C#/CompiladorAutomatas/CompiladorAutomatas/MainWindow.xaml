@@ -1,0 +1,76 @@
+﻿<Window x:Class="CompiladorAutomatas.MainWindow"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        Background="White"
+        TextElement.FontWeight="Medium"
+        TextElement.FontSize="14"
+        FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Icon="codificacion.ico"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CompiladorAutomatas"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen"
+        Title="Compilador" Height="957.5" Width="1273" Loaded="Window_Loaded">
+    <Grid>
+        <DockPanel Height="50" LastChildFill="False" VerticalAlignment="Top" Background="#FF4B0303" Margin="0,-1,0,0">
+            <Button MouseEnter="OnFocusR" MouseLeave="LeaveFocus" Height="50" VerticalAlignment="Top" Width="76" DockPanel.Dock="Right" Padding="0" Background="{x:Null}" materialDesign:ShadowAssist.ShadowDepth="Depth3" BorderBrush="{x:Null}" Click="Button_Click">
+                <materialDesign:PackIcon Kind="WindowClose"/>
+            </Button>
+            <Button MouseEnter="OnFocus" MouseLeave="LeaveFocus" x:Name="btnMax" Height="50" VerticalAlignment="Top" Width="76" DockPanel.Dock="Right" Padding="0" Background="{x:Null}" materialDesign:ShadowAssist.ShadowDepth="Depth3" BorderBrush="{x:Null}" Click="btnMax_Click">
+                <materialDesign:PackIcon Kind="WindowMaximize"/>
+            </Button>
+            <Button MouseEnter="OnFocus" MouseLeave="LeaveFocus" x:Name="btnMin" Height="50" VerticalAlignment="Top" Width="76" DockPanel.Dock="Right" Padding="0" Background="{x:Null}" materialDesign:ShadowAssist.ShadowDepth="Depth3" BorderBrush="{x:Null}" Click="btnMin_Click">
+                <materialDesign:PackIcon Kind="WindowMinimize"/>
+            </Button>
+            <Menu IsMainMenu="True" Width="160" Background="#FF4B0303" Foreground="#DDFFFFFF" Margin="5,2,5,0">
+                <MenuItem Header="_Archivo" Width="160" Padding="30,0,16,0" Height="50" Margin="0">
+                    <MenuItem Header="_Abrir" Click="Open_Click">
+                        <MenuItem.Icon >
+                            <materialDesign:PackIcon Kind="FolderOpen"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="_Guardar" Click="SaveAs_Click">
+                        <MenuItem.Icon >
+                            <materialDesign:PackIcon Kind="ContentSave"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="_Abrir tokens" Click="Mostrar_Click">
+                        <MenuItem.Icon >
+                            <materialDesign:PackIcon Kind="Show"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="_Salir" Click="Button_Click">
+                        <MenuItem.Icon >
+                            <materialDesign:PackIcon Kind="ExitToApp"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+
+        <ScrollViewer x:Name="SVNumeros"  ScrollChanged="Proof" Margin="25,64,0,0" VerticalScrollBarVisibility="Hidden" HorizontalAlignment="Left" Width="55" Height="518" VerticalAlignment="Top">
+            <TextBox x:Name="txtLines" AllowDrop="False" Focusable="False" IsTabStop="False" Height="516" TextWrapping="Wrap" VerticalAlignment="Top" Background="#CCF0F0F0" Foreground="#FF4B0303" HorizontalContentAlignment="Right" Padding="0,0,5,0" BorderThickness="1" HorizontalAlignment="Left" Width="56" BorderBrush="#33000000" FontFamily="Consolas"/>
+        </ScrollViewer>
+
+        <ScrollViewer x:Name="MoveAll" ScrollChanged="Proof" VerticalScrollBarVisibility="Hidden" Margin="84,65,39,0" Padding="0" Height="515" VerticalAlignment="Top">
+            <TextBox  materialDesign:HintAssist.Hint="Editor" ToolTip="Editor" x:Name="txtB" AcceptsReturn="True" TextWrapping="Wrap" VerticalAlignment="Top" Height="514" TextChanged="txtB_TextChanged" Padding="10,0,0,0" ScrollViewer.CanContentScroll="True" FontFamily="Consolas" HorizontalContentAlignment="Stretch" BorderThickness="0" Cursor="Pen" Margin="0" VerticalContentAlignment="Stretch" Background="#33E6E6E6" />
+        </ScrollViewer>
+        <ListView x:Name="TokensData" Margin="25,590,43,96">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Indice" DisplayMemberBinding="{Binding IdTk}" Width="100"/>
+                    <GridViewColumn Header="Token" DisplayMemberBinding="{Binding Token}"  Width="150"/>
+                    <GridViewColumn Header="Linea" DisplayMemberBinding="{Binding Linea}" Width="150"/>
+                    <GridViewColumn Header="Lexema" DisplayMemberBinding="{Binding Tipo}" Width="150"/>
+                    <GridViewColumn Header="Regla" DisplayMemberBinding="{Binding Regla1}" Width="200"/>
+                    <GridViewColumn Header="Descripcion" DisplayMemberBinding="{Binding Descripcion1}" Width="250"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

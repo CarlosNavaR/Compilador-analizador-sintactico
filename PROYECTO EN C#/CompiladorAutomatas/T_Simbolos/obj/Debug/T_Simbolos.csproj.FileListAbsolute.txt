@@ -1,0 +1,6 @@
+C:\Users\Buz\Desktop\6T0 SEMESTRE\LENGUAJES Y AUTOMATAS 1\COMPILADOR\CompiladorAutomatas\T_Simbolos\bin\Debug\T_Simbolos.dll
+C:\Users\Buz\Desktop\6T0 SEMESTRE\LENGUAJES Y AUTOMATAS 1\COMPILADOR\CompiladorAutomatas\T_Simbolos\bin\Debug\T_Simbolos.pdb
+C:\Users\Buz\Desktop\6T0 SEMESTRE\LENGUAJES Y AUTOMATAS 1\COMPILADOR\CompiladorAutomatas\T_Simbolos\obj\Debug\T_Simbolos.dll
+C:\Users\Buz\Desktop\6T0 SEMESTRE\LENGUAJES Y AUTOMATAS 1\COMPILADOR\CompiladorAutomatas\T_Simbolos\obj\Debug\T_Simbolos.pdb
+C:\Users\Buz\Desktop\6T0 SEMESTRE\LENGUAJES Y AUTOMATAS 1\COMPILADOR\CompiladorAutomatas\T_Simbolos\obj\Debug\T_Simbolos.csproj.CoreCompileInputs.cache
+C:\Users\Buz\Desktop\6T0 SEMESTRE\LENGUAJES Y AUTOMATAS 1\COMPILADOR\CompiladorAutomatas\T_Simbolos\obj\Debug\T_Simbolos.csprojAssemblyReference.cache

@@ -1,0 +1,31 @@
+>class namespace {
+
+>func Suma (){
+>int numero1 : 3;
+>int numero2 : 3;
+>int suma;
+suma : numero1 + numero2;
+}
+
+<< Comentario >>
+
+>func Condicional (){
+>bool bandera:true;
+>si(bandera !: true) {
+>print('Bandera true');
+}
+>sino{
+>print('Bandera false');
+}
+}
+
+>func Texto (cadena){
+>string ReemplazarCadena : ' ' ;
+ReemplazarCadena : cadena;
+}
+
+>func Decimales (){
+>double Variable1 : 3.2;
+}
+
+}

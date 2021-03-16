@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompiladorAutomatas", "CompiladorAutomatas\CompiladorAutomatas.csproj", "{CEAA70B9-1AA9-4626-BD98-58BEED627882}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T_Simbolos", "T_Simbolos\T_Simbolos.csproj", "{605113E1-621F-4079-9D79-9EC09AA9C924}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEAA70B9-1AA9-4626-BD98-58BEED627882}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEAA70B9-1AA9-4626-BD98-58BEED627882}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEAA70B9-1AA9-4626-BD98-58BEED627882}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEAA70B9-1AA9-4626-BD98-58BEED627882}.Release|Any CPU.Build.0 = Release|Any CPU
+		{605113E1-621F-4079-9D79-9EC09AA9C924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{605113E1-621F-4079-9D79-9EC09AA9C924}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{605113E1-621F-4079-9D79-9EC09AA9C924}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{605113E1-621F-4079-9D79-9EC09AA9C924}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3FBE8D55-79EA-4F59-9201-91962C8B384E}
+	EndGlobalSection
+EndGlobal
